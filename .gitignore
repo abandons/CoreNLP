@@ -6,3 +6,4 @@
 *.so
 .DS_Store
 .settings/**
+/.nb-gradle/

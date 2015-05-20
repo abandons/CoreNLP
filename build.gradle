@@ -3,7 +3,6 @@
 // Gradle.
 //
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'application'
 
 // Gradle java plugin
@@ -25,13 +24,13 @@ jar {
     }
 }
 
-uploadArchives {
-    repositories {
-       flatDir {
-           dirs 'repos'
-       }
-    }
-}
+//uploadArchives {
+//    repositories {
+//       flatDir {
+//           dirs 'repos'
+//       }
+//    }
+//}
 
 // Add src-extra build target
 sourceSets {
@@ -50,13 +49,13 @@ dependencies {
 }
 
 // Eclipse plugin setup
-eclipse {
-  classpath {
-    defaultOutputDir = file('bin/')
-    file {
-      beforeMerged { classpath ->
-        classpath.entries.removeAll { entry -> entry.kind == 'lib' }
-      }
-    }
-  }
-}
+//eclipse {
+//  classpath {
+//    defaultOutputDir = file('bin/')
+//    file {
+//      beforeMerged { classpath ->
+//        classpath.entries.removeAll { entry -> entry.kind == 'lib' }
+//      }
+//    }
+//  }
+//}
