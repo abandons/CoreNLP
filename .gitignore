@@ -7,3 +7,4 @@
 .DS_Store
 .settings/**
 /.nb-gradle/
+sentences_seg.txt
